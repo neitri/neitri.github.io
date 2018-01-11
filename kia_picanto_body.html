@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kia Picanto Body Can</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .message {
+            padding-bottom: 20px;
+            margin-bottom: 80px;
+        }
+
+        .message .id {
+            float: left;
+            margin: 0 10px;
+            font-family: monospace;
+            font-size: 150%;
+        }
+
+        .message .bits {
+            float: left;
+            position: relative;
+            font-family: monospace;
+        }
+
+        .message .bits .info {
+            position: absolute;
+            left: 4px;
+            border-left: 1px dotted #000;
+            border-bottom: 1px dotted #000;
+            padding-left: 3px;
+            white-space: nowrap;
+        }
+
+        .message .bits:hover {
+            font-weight: bold;
+        }
+
+        .message .bits:hover .info {
+            border-left-style: solid;
+            border-bottom-style: solid;
+        }
+
+        .offset-1 {
+            padding-top: 20px;
+        }
+
+        .offset-2 {
+            padding-top: 40px;
+        }
+
+        .offset-3 {
+            padding-top: 60px;
+        }
+
+        .offset-4 {
+            padding-top: 80px;
+        }
+
+        .offset-5 {
+            padding-top: 100px;
+        }
+
+        .offset-6 {
+            padding-top: 120px;
+        }
+
+        .offset-7 {
+            padding-top: 140px;
+        }
+
+        .offset-8 {
+            padding-top: 160px;
+        }
+
+        .offset-9 {
+            padding-top: 180px;
+        }
+
+        .offset-10 {
+            padding-top: 200px;
+        }
+
+        .offset-11 {
+            padding-top: 220px;
+        }
+
+        .offset-12 {
+            padding-top: 240px;
+        }
+
+        .offset-13 {
+            padding-top: 260px;
+        }
+
+        .offset-14 {
+            padding-top: 280px;
+        }
+
+        .offset-15 {
+            padding-top: 300px;
+        }
+
+        .offset-16 {
+            padding-top: 320px;
+        }
+
+        .offset-17 {
+            padding-top: 340px;
+        }
+
+        .offset-18 {
+            padding-top: 360px;
+        }
+
+        .offset-19 {
+            padding-top: 380px;
+        }
+
+        .offset-20 {
+            padding-top: 400px;
+        }
+
+        .offset-21 {
+            padding-top: 420px;
+        }
+
+        .offset-22 {
+            padding-top: 440px;
+        }
+
+        .offset-23 {
+            padding-top: 460px;
+        }
+
+        .offset-24 {
+            padding-top: 480px;
+        }
+
+        .margin-1 {
+            padding-bottom: 40px;
+        }
+
+        .margin-2 {
+            padding-bottom: 60px;
+        }
+
+        .margin-3 {
+            padding-bottom: 80px;
+        }
+
+        .margin-4 {
+            padding-bottom: 100px;
+        }
+
+        .margin-5 {
+            padding-bottom: 120px;
+        }
+
+        .margin-6 {
+            padding-bottom: 140px;
+        }
+
+        .margin-7 {
+            padding-bottom: 160px;
+        }
+
+        .margin-8 {
+            padding-bottom: 180px;
+        }
+
+        .margin-9 {
+            padding-bottom: 200px;
+        }
+
+        .margin-10 {
+            padding-bottom: 220px;
+        }
+
+        .margin-11 {
+            padding-bottom: 240px;
+        }
+
+        .margin-12 {
+            padding-bottom: 260px;
+        }
+
+        .margin-13 {
+            padding-bottom: 280px;
+        }
+
+        .margin-14 {
+            padding-bottom: 300px;
+        }
+
+        .margin-15 {
+            padding-bottom: 320px;
+        }
+
+        .margin-16 {
+            padding-bottom: 340px;
+        }
+
+        .margin-17 {
+            padding-bottom: 360px;
+        }
+
+        .margin-18 {
+            padding-bottom: 380px;
+        }
+
+        .margin-19 {
+            padding-bottom: 400px;
+        }
+
+        .margin-20 {
+            padding-bottom: 420px;
+        }
+
+        .margin-21 {
+            padding-bottom: 440px;
+        }
+
+        .margin-22 {
+            padding-bottom: 460px;
+        }
+
+        .margin-23 {
+            padding-bottom: 480px;
+        }
+
+        .margin-24 {
+            padding-bottom: 500px;
+        }
+
+        .color-rt6 {
+            background: green;
+            color: white
+        }
+
+        .color-bsi {
+            background: yellow
+        }
+
+        .color-steering-wheel {
+            background: blue;
+            color: white
+        }
+
+        .color-display {
+            background: red
+        }
+
+        .color-parktronic {
+            background: BlueViolet;
+            color: white
+        }
+
+        .color-yatour {
+            background: Chocolate
+        }
+
+        .color-climate {
+            background: DarkCyan
+        }
+
+        .color-fmux {
+            background: GreenYellow
+        }
+
+        .color-radio {
+            background: HotPink
+        }
+
+        .color-dashboard {
+            background: LightCoral
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Body can</h1>
+            <p>All data related to Kia Picanto '2012 (AT, ESC, SuperVision)</p>
+            <a href="https://github.com/autowp/autowp.github.io" class="btn btn-primary">View on github, contribute</a>
+        </div>
+
+        <!--            <div class="well">
+                <h3>Legend</h3>
+                <ul>
+                    <li>
+                        <span class="label label-info">Berlingo</span> - based on Berlingo '2011
+                    </li>
+                    <li>
+                        <span class="label label-info">C4 (B7)</span> - based on Citroën C4 '2012 (B7)
+                    </li>
+                    <li>
+                        <span class="label label-info">C4 (B3/B5)</span> - based on Citroën C4 '2008 (B3/B5)
+                    </li>
+                    <li>
+                        <span class="label label-info">C4 Sedan</span> - based on Citroën C4 Sedan
+                    </li>
+                    <li>
+                        <span class="label label-info">407</span> - based on Peugeot 407 Coupé '2006
+                    </li>
+                    <li>
+                        <span class="label label-info">Yatour</span> - based on Yatour YT-M06
+                    </li>
+                    <li>
+                        <span class="label label-info">308</span> - based on BSI from Peugeot 308
+                    </li>
+                </ul>
+                
+                <p>
+                    <span class="color-rt6">RT6</span>
+                    <span class="color-bsi">BSI</span>
+                    <span class="color-steering-wheel">Steering wheel</span>
+                    <span class="color-display">Display</span>
+                    <span class="color-parktronic">Parktronic</span>
+                    <span class="color-yatour">Yatour</span>
+                    <span class="color-climate">Climate</span>
+                    <span class="color-fmux">FMUX</span>
+                    <span class="color-radio">Radio</span>
+                    <span class="color-dashboard">Dashboard</span>
+                </p>
+            </div> -->
+
+
+        <table class="table table-hover table-condensed">
+            <caption>ID index</caption>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#003">003</a>
+                    </td>
+                    <td>
+                        <a href="#100">100</a>
+                    </td>
+                    <td>
+                        <a href="#101">101</a>
+                    </td>
+                    <td>
+                        <a href="#103">103</a>
+                    </td>
+                    <td>
+                        <a href="#104">104</a>
+                    </td>
+                    <td>
+                        <a href="#400">400</a>
+                    </td>
+                    <td>
+                        <a href="#404">404</a>
+                    </td>
+                    <td>
+                        <a href="#500">500</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-hover">
+            <caption>Table of contents</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Length</th>
+                    <th>Data</th>
+                    <th>Period</th>
+                    <th>Source</th>
+                    <th>Comment</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#003">003</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Управление ЦЗ</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#100">100</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Состояние ЗЗ</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#101">101</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 05 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Не изменяется.</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#103">103</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Общий статус.</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#104">104</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Статус состояния дверей и замков</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#400">400</a>
+                    </td>
+                    <td>8</td>
+                    <td>04 X2 00 00 00 00 FF FF</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#404">404</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#500">500</a>
+                    </td>
+                    <td>8</td>
+                    <td>00 00 00 00 00 00 00 00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Скорость, напряжение</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="message" id="003">
+            <div class="network">Network: body</div>
+            <div class="source">Source: </div>
+            <div class="dest">Dest:
+                <span class="label label-success">BCM</span>
+            </div>
+            <div class="description">
+                <p>Управление замками дверей.</p>
+            </div>
+            <div class="id">003</div>
+            <div class="structure clearfix">
+                <!-- data 0 -->
+                <div class="bits">&nbsp;000</div>
+                <div class="bits">
+                        A
+                        <div class="info offset-3">Открыть багажник.</div>
+                    </div>
+                <div class="bits">000000</div> 
+                <!-- data 1 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 2 -->
+                <div class="bits">&nbsp;00000</div>
+                <div class="bits">
+                    B
+                    <div class="info offset-2">Включение охраны с запиранием ЦЗ.</div>
+                </div>
+                <div class="bits">00</div>                
+                <!-- data 3 -->
+                <div class="bits">&nbsp;000000</div>
+                <div class="bits">
+                    C
+                    <div class="info offset-1">Выключение охраны с отпираним ЦЗ.</div>
+                </div>
+                <div class="bits">
+                    D
+                    <div class="info offset-0">Включение охраны с запиранием ЦЗ.</div>
+                </div>
+                <!-- data 4 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 5 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 6 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 7 -->
+                <div class="bits">&nbsp;00000000</div>
+            </div>
+        </div>
+
+        <div class="message" id="100">
+            <div class="network">Network: body</div>
+            <div class="source">Source:</div>
+            <div class="dest">Dest:</div>
+            <div class="description">
+                <p>Состояние ЗЗ</p>
+            </div>
+            <div class="id">100</div>
+            <div class="structure clearfix margin-13">
+                <!-- data 0 -->
+                <div class="bits">
+                    AAAA
+                    <div class="info offset-13">
+                        0000 (0) - Ключь не в замке
+                        <br />0001 (1) - Ключь в положении выключено
+                        <br />0010 (2) - Положение аксесуары
+                        <br />0011 (3) - Положение зажигание
+                        <br />0100 (4) - Положение стартер
+                    </div>
+                </div>
+                <div class="bits">
+                    BBBB
+                    <div class="info offset-9">
+                        0001 (1) - повторное запирание сброшено
+                        <br />0010 (2) - Охрана включена
+                        <br />0100 (4) - Охрана отключена
+                        <br />0111 (7) - задержка повторного запирания
+                    </div>
+                </div>
+                <!-- data 1 -->
+                <div class="bits">&nbsp;</div>
+                <div class="bits">
+                        C
+                        <div class="info offset-8">
+                            1 - Охрана
+                        </div>
+                    </div>
+                <div class="bits">00</div>
+                <div class="bits">
+                    D
+                    <div class="info offset-7">Зажигание 2</div>
+                </div>
+                <div class="bits">
+                        E
+                        <div class="info offset-6">Зажигание 1</div>
+                    </div>
+                <div class="bits">000&nbsp;</div>
+                <!-- data 2 -->
+                <div class="bits">
+                    F
+                    <div class="info offset-5">Ключь в замке.</div>
+                </div>
+                <div class="bits">000000</div>
+                <div class="bits">
+                        G
+                        <div class="info offset-4">Габаритные огни</div>
+                    </div>
+                <!-- data 3 -->
+                <div class="bits">&nbsp;</div>
+                <div class="bits">
+                        H
+                        <div class="info offset-3">охрана снята</div>
+                    </div>
+                <div class="bits">000000</div>
+                <div class="bits">
+                        I
+                        <div class="info offset-2">Габаритные огни</div>
+                    </div>
+                <!-- data 4 -->
+                <div class="bits">&nbsp;0</div>
+                <div class="bits">
+                    J
+                    <div class="info offset-1">Не определено.</div>
+                </div>    
+                <div class="bits">000000</div>
+                <!-- data 5 -->
+                <div class="bits">&nbsp;0000</div>
+                <div class="bits">
+                    K
+                    <div class="info offset-0">Задняя передача</div>
+                </div>
+                <div class="bits">000</div>
+                <!-- data 6 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 7 -->
+                <div class="bits">&nbsp;00000000</div>
+            </div>
+        </div><!--
+        0   1   2   3   4   5   6   7
+        31	18	18	81	40	08	00	00 задний ход
+        31	18	18	81	00	00	00	00
+        31	18	18	81	40	00	00	00
+        31	18	10	80	40	00	00	00  свет выкл
+        21	00	10	80	40	00	00	00 асс
+        11	00	10	80	00	00	00	00 выкл
+        01	00	00	80	00	00	00	00 без ключа
+        01	00	00	00	00	00	00	00 Закрыть
+        04	80	00	00	00	00	00	00 закрыто
+        02	80	00	00	00	00	00	00 охрана включена
+        -->
+
+
+        <div class="message" id="101">
+            <div class="network">Network: CAN-INFO</div>
+            <div class="source">Source:
+                <span class="label label-primary">BSI</span>
+            </div>
+            <div class="dest">Dest: </div>
+            <div class="id">101</div>
+            <!-- data 0 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 1 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 2 -->
+            <div class="bits">&nbsp;05</div>
+            <!-- data 3 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 4 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 5 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 6 -->
+            <div class="bits">&nbsp;00</div>
+            <!-- data 7 -->
+            <div class="bits">&nbsp;00</div>
+        </div>
+
+        <div class="message" id="103">
+            <div class="network">Network: body</div>
+            <div class="source">Source:</div>
+            <div class="dest">Dest:</div>
+            <div class="description">
+                <p>Общий статус</p>
+            </div>
+            <div class="id">103</div>
+            <div class="structure clearfix margin-1">
+                <div class="bits">
+                    AA
+                    <div class="info">
+                        1F - Скорость больше 20км\ч
+                        <br />17 - Скорость больше 15км\ч
+                        <br />13 - Скорость больше 10км\ч
+                        <br />03 - Скорость больше 2км\ч
+                        <br />01 - Двигатель заведен
+                    </div>
+                </div>
+                <div class="bits">&nbsp;00 00 00 00 00 00 00</div>
+            </div>
+        </div>
+
+        <div class="message" id="104">
+            <div class="network">Network: body</div>
+            <div class="source">Source:
+                <span class="label label-primary">BCM</span>
+            </div>
+            <div class="dest">Dest:
+                <span class="label label-success">Cluster</span>
+            </div>
+            <div class="description">
+                <p>Статус сотояния дверей и замков.</p>
+            </div>
+            <div class="id">104</div>
+
+            <div class="structure clearfix margin-5">
+                <div class="bits">0000</div>
+                <div class="bits">
+                    A
+                    <div class="info offset-9">
+                        door rl
+                    </div>
+                </div>
+                <div class="bits">
+                    B
+                    <div class="info offset-8">
+                        lock rl
+                    </div>
+                </div>
+                <div class="bits">
+                    C
+                    <div class="info offset-7">
+                        door rr
+                    </div>
+                </div>
+                <div class="bits">
+                    D
+                    <div class="info offset-6">
+                        lock rr
+                    </div>
+                </div>
+                <div class="bits">&nbsp;</div>
+                <div class="bits">
+                    E
+                    <div class="info offset-5">
+                        door fl
+                    </div>
+                </div>
+                <div class="bits">
+                    F
+                    <div class="info offset-4">
+                        door fr
+                    </div>
+                </div>
+                <div class="bits">0</div>
+                <div class="bits">
+                    G
+                    <div class="info offset-3">
+                        door back
+                    </div>
+                </div>
+                <div class="bits">
+                    H
+                    <div class="info offset-2">
+                        door rf
+                    </div>
+                </div>
+                <div class="bits">0</div>
+                <div class="bits">
+                    I
+                    <div class="info offset-1">
+                        door fl
+                    </div>
+                </div>
+                <div class="bits">0 00000000 00000000 00000000 00000000 00000000 00000000</div>
+            </div>
+        </div>
+
+        <div class="message" id="400">
+            <div class="network">Network: body</div>
+            <div class="source">Source:</div>
+            <div class="dest">Dest:</div>
+            <div class="description">
+                <p>Засыпание шины.</p>
+            </div>
+            <div class="id">400</div>
+            <div class="bits">04&nbsp;</div>
+            <div class="bits">
+                X
+                <div class="info">1 - при засыпании шины.</div>
+            </div>
+            <div class="bits">2 00 00 00 00 FF FF&nbsp;</div>
+        </div>
+
+        <div class="message" id="404">
+            <div class="network">Network: body</div>
+            <div class="source">Source:</div>
+            <div class="description">
+
+            </div>
+            <div class="id">404</div>
+            <div class="bits">00&nbsp;</div> 
+            <div class="bits">
+                X
+                <div class="info">
+                    0 - Нормальный режим
+                    <br /> 1 - подготовка ко сну
+                    <br /> 3 - переход в спящий режим
+                </div>
+            </div>
+            <div class="bits">2 00 00 00 00 FF FF</div>
+        </div>
+
+        <div class="message" id="500">
+            <div class="network">Network: body</div>
+            <div class="source">Source:
+                <span class="label label-primary">Cluster</span>
+            </div>
+            <div class="description">
+                Скорость движения, напряжение при включенном зажигании.
+            </div>
+            <div class="id">500</div>
+            <div class="bits">
+                AA&nbsp;
+                <div class="info offset-1">
+                    Скорость автомобиля, км\ч
+                </div>
+            </div>
+            <div class="bits">00&nbsp;</div>
+            <div class="bits">
+                BB&nbsp;
+                <div class="info">
+                    Напряжение бортовой сети, при включенном зажигании. U*10 Вольт.
+                </div>
+            </div>
+            <div class="bits">00 00 00 00&nbsp;</div>
+        </div>
+    </div>
+</body>
+
+</html>
