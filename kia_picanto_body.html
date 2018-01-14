@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406813-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-112406813-1');
+    </script>
+
     <style type="text/css">
         .message {
             padding-bottom: 20px;
@@ -480,10 +490,10 @@
                 <!-- data 0 -->
                 <div class="bits">&nbsp;000</div>
                 <div class="bits">
-                        A
-                        <div class="info offset-3">Открыть багажник.</div>
-                    </div>
-                <div class="bits">000000</div> 
+                    A
+                    <div class="info offset-3">Открыть багажник.</div>
+                </div>
+                <div class="bits">000000</div>
                 <!-- data 1 -->
                 <div class="bits">&nbsp;00000000</div>
                 <!-- data 2 -->
@@ -492,7 +502,7 @@
                     B
                     <div class="info offset-2">Включение охраны с запиранием ЦЗ.</div>
                 </div>
-                <div class="bits">00</div>                
+                <div class="bits">00</div>
                 <!-- data 3 -->
                 <div class="bits">&nbsp;000000</div>
                 <div class="bits">
@@ -546,20 +556,20 @@
                 <!-- data 1 -->
                 <div class="bits">&nbsp;</div>
                 <div class="bits">
-                        C
-                        <div class="info offset-8">
-                            1 - Охрана
-                        </div>
+                    C
+                    <div class="info offset-8">
+                        1 - Охрана
                     </div>
+                </div>
                 <div class="bits">00</div>
                 <div class="bits">
                     D
                     <div class="info offset-7">Зажигание 2</div>
                 </div>
                 <div class="bits">
-                        E
-                        <div class="info offset-6">Зажигание 1</div>
-                    </div>
+                    E
+                    <div class="info offset-6">Зажигание 1</div>
+                </div>
                 <div class="bits">000&nbsp;</div>
                 <!-- data 2 -->
                 <div class="bits">
@@ -568,26 +578,26 @@
                 </div>
                 <div class="bits">000000</div>
                 <div class="bits">
-                        G
-                        <div class="info offset-4">Габаритные огни</div>
-                    </div>
+                    G
+                    <div class="info offset-4">Габаритные огни</div>
+                </div>
                 <!-- data 3 -->
                 <div class="bits">&nbsp;</div>
                 <div class="bits">
-                        H
-                        <div class="info offset-3">охрана снята</div>
-                    </div>
+                    H
+                    <div class="info offset-3">охрана снята</div>
+                </div>
                 <div class="bits">000000</div>
                 <div class="bits">
-                        I
-                        <div class="info offset-2">Габаритные огни</div>
-                    </div>
+                    I
+                    <div class="info offset-2">Габаритные огни</div>
+                </div>
                 <!-- data 4 -->
                 <div class="bits">&nbsp;0</div>
                 <div class="bits">
                     J
                     <div class="info offset-1">Не определено.</div>
-                </div>    
+                </div>
                 <div class="bits">000000</div>
                 <!-- data 5 -->
                 <div class="bits">&nbsp;0000</div>
@@ -601,7 +611,8 @@
                 <!-- data 7 -->
                 <div class="bits">&nbsp;00000000</div>
             </div>
-        </div><!--
+        </div>
+        <!--
         0   1   2   3   4   5   6   7
         31	18	18	81	40	08	00	00 задний ход
         31	18	18	81	00	00	00	00
@@ -763,7 +774,7 @@
 
             </div>
             <div class="id">404</div>
-            <div class="bits">00&nbsp;</div> 
+            <div class="bits">00&nbsp;</div>
             <div class="bits">
                 X
                 <div class="info">
