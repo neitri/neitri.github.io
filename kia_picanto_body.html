@@ -415,7 +415,7 @@
                     <td>00 00 05 00 00 00 00 00</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>Не изменяется.</td>
+                    <td>Парктроник.</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
@@ -626,30 +626,77 @@
         02	80	00	00	00	00	00	00 охрана включена
         -->
 
-
+   
         <div class="message" id="101">
-            <div class="network">Network: CAN-INFO</div>
-            <div class="source">Source:
-                <span class="label label-primary">BSI</span>
+            <div class="network">Network: body</div>
+            <div class="source">Source:</div>
+            <div class="dest">Dest:</div>
+            <div class="description">
+                <p>Парктроник</p>
             </div>
-            <div class="dest">Dest: </div>
             <div class="id">101</div>
-            <!-- data 0 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 1 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 2 -->
-            <div class="bits">&nbsp;05</div>
-            <!-- data 3 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 4 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 5 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 6 -->
-            <div class="bits">&nbsp;00</div>
-            <!-- data 7 -->
-            <div class="bits">&nbsp;00</div>
+            <div class="structure clearfix margin-13">
+                <!-- data 0 -->
+                <div class="bits">00</div>
+                <div class="bits">
+                    AAA
+                    <div class="info offset-13">
+                        000 (0) - Левый боковой датчик. Нет зоны.
+                        <br />001 (1) - 3 деления
+                        <br />010 (2) - 2 деления
+                        <br />011 (3) - 1 деление
+                        <br />100 (4) - 3 деления моргают
+                    </div>
+                </div>
+                <div class="bits">
+                    BBB
+                    <div class="info offset-9">
+                        000 (0) - Левый центральный датчик. Нет зоны.
+                        <br />001 (1) - 3 деления
+                        <br />010 (2) - 2 деления
+                        <br />011 (3) - 1 деление
+                        <br />100 (4) - 3 деления моргают
+                    </div>
+                </div>
+                <!-- data 1 -->
+                <div class="bits">&nbsp;00</div>
+                <div class="bits">
+                    CCC
+                    <div class="info offset-13">
+                        000 (0) - Правый центральный датчик. Нет зоны.
+                        <br />001 (1) - 3 деления
+                        <br />010 (2) - 2 деления
+                        <br />011 (3) - 1 деление
+                        <br />100 (4) - 3 деления моргают
+                    </div>
+                </div>
+                <div class="bits">
+                    DDD
+                    <div class="info offset-9">
+                        000 (0) - Правый боковой датчик. Нет зоны.
+                        <br />001 (1) - 3 деления
+                        <br />010 (2) - 2 деления
+                        <br />011 (3) - 1 деление
+                        <br />100 (4) - 3 деления моргают
+                    </div>
+                </div>
+                <!-- data 2 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 3 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 4 -->
+                <div class="bits">&nbsp;000000000</div>
+                <div class="bits">
+                    E
+                    <div class="info offset-1">Парктроник включен.</div>
+                </div>
+                <!-- data 5 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 6 -->
+                <div class="bits">&nbsp;00000000</div>
+                <!-- data 7 -->
+                <div class="bits">&nbsp;00000000</div>
+            </div>
         </div>
 
         <div class="message" id="103">
